@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Sunflower:wght@300&display=swap');
+
+*{
+    padding: 0; margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    border-collapse: collapse;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 100;
+}
+
+.contents1{
+    font-size: 20px;
+}
+
+.contents3{
+    font-size: 14px;
+}
+
+.result{
+    font-size: 24px;
+}
+
+.text_bold{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+/* intro */
+
+.intro_bg{
+    width: 100%; height: 718px;
+    background-image: url(../images/intro.png);
+}
+
+.header{
+    display: flex;
+    width: 1280px; height: 86px;
+    margin: 0 auto;
+}
+
+.search_area{
+    width: 300px; height: 40px;
+    margin-top: 24px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.search_area > input{
+    width: 240px; height: 100%;
+    border: none;
+    padding-left: 10px;
+    color: #FFFFFFA6;
+    background-color: transparent;
+}
+
+.search_area > span{
+    width: 50px; height: 100%;
+    padding-right: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    width: calc(1280px - 300px);
+    line-height: 86px;
+}
+
+.nav > li{
+   margin-left: 84px;
+}
+
+.nav > li > a{
+    color: #fff;
+}
+
+.intro_text{
+    width: 100%; height: 57px;
+    text-align: center;
+    margin-top: calc(317px - 86px);
+}
+
+.intro_text > h1{
+    font-size: 48px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.intro_text h4{
+    font-size: 20px;
+    color: #fff;
+    font-weight: normal;
+}
+
+/* amount */
+
+.amount{
+    display: flex;
+    width: 1280px; height: 132px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+
+    position: relative;
+    top: -66px;
+}
+
+.amount > li{
+    flex: 1;
+}
+
+.amount > li > div{
+    height: 57px;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 37px;
+    border-right: 1px solid #ededed;
+}
+
+.amount > li:last-child > div{
+    border-right: none;
+}
+
+/* main_text0 */
+
+.main_text0{
+    width: 100%; height: 600px;
+    background-color: #F1F2F3;
+    margin-top: -132px;
+    padding: 116px 0;
+    box-sizing: border-box;
+}
+
+.main_text0 > h1{
+    font-size: 48px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.main_text0 > .contents1{
+    text-align: center;
+}
+
+.icons{
+    display: flex;
+    width: 1280px; height: 302px;
+    margin: 50px auto;
+}
+
+.icons > li{
+    flex: 1;
+    width: 413px; height: 100%;
+    background-color: #fff;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.icons > li:last-child{
+    margin-right: 0;
+}
+
+.icons > li > .icon_img{
+    margin-top: 18px;
+}
+
+.icons .contents3{
+    width: 230px;
+    margin: 0 auto;
+}
+
+.icons > li > .more{
+    width: 100px; height: 30px;
+    line-height: 30px;
+    background-color: #2F7AF4;
+    color: #fff;
+    font-size: 14px;
+    margin: 25px auto;
+    cursor: pointer;
+}
+
+/* main_text1 */
+
+.main_text1{
+    width: 1280px; height: 660px;
+    margin: 0 auto;
+}
+
+.main_text1 > h1{
+    font-size: 48px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.main_text1 > .contents1{ text-align: center;}
+
+.service{
+    display: flex;
+    width: 1280px; height: 426px;
+    margin-top: 50px;
+    /* box-sizing: border-box; */
+}
+
+.service > .food_photo{ flex: 1; margin-right: 20px;}
+.service > .contents2{ flex: 1;}
+
+.service > .contents2 > h2{
+    font-weight: bold;
+    margin: 27px auto;
+}
+
+/* main_text3 */
+
+.main_text2{
+    width: 100%; height: 418px;
+    background-image: url(../images/contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main_text2 > ul{
+    display: flex;
+    padding-top: 138px;
+}
+
+.main_text2 > ul > li{
+    flex: 1;
+    text-align: center;
+    margin: auto 0;
+}
+
+.main_text2 > ul > li > div > h1,
+.main_text2 > ul > li > div{
+    color: #fff;
+}
+
+.more2{
+    width: 220px; height: 40px;
+    line-height: 40px;
+    border: 1px solid #fff;
+    margin: 20px auto 0 auto;
+    cursor: pointer;
+}
+
+/* footer */
+footer{
+    display: flex;
+    width: 100%; height: 152px;
+    background-color: #1F1F1F;
+}
+
+footer > .logo{
+    flex: 3;
+    color: #fff;
+    text-align: center;
+    margin: auto 0;
+}
+
+footer > .info{
+    flex: 9;
+    color: #fff;
+    margin: auto 0;
+}
