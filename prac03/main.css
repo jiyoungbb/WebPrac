@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+*{
+    padding: 0; margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+
+/* header */
+
+header{
+    width: 100%; height: 50px;
+    border-bottom: 1px solid #ededed;
+}
+
+header h1,
+header h1 > img{
+    width: 260px; height: 50px;
+}
+
+header ul {
+    display: flex;
+    width: 260px; height: 50px;
+    line-height: 50px;
+}
+
+header ul > li::after{
+    content: '|';
+    margin: 0 5px;
+    color: #999;
+}
+
+header ul > li:last-child::after{
+    content: '';
+}
+
+header ul > li > a{
+    color: #666;
+    font-size: 14px;
+}
+
+header .inner_wrap{
+    display: flex;
+    width: 1280px; height: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+/* nav */
+
+nav{
+    width: 100%; height: 80px;
+    border-bottom: 1px solid #ededed;
+}
+
+nav .logo_img2{
+    width: 196px; height: 100%;
+    padding-top: 25px;
+    box-sizing: border-box;
+    margin-right: 70px;
+}
+
+nav .logo_img2 > img{
+    display: block;
+    margin: auto 0;
+    width: 196px; height: 30px;
+}
+
+nav .nav{
+    display: flex;
+    width: 700px; height: 100%;
+    line-height: 80px;
+    text-align: center;
+    margin-right: 12px;
+}
+
+nav .nav > li{
+    display: inline-block;
+    margin-right: 27px;
+}
+
+.nav > li:last-child{
+    margin-right: 0;
+}
+
+.nav > li > a{
+    color: #333;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+nav .search_area{
+    width: 300px; height: 100%;
+    line-height: 80px;
+
+    position: relative;
+}
+
+
+nav .search_area input{
+    width: 280px; height: 35px;
+    padding-left: 10px;
+    border: 1px solid #ededed;
+    font-size: 16px; color: #999;
+}
+
+nav .search_area img{
+    position: absolute;
+    right: 20px; top: 27px;
+
+}
+
+nav > .inner_wrap{
+    display: flex;
+    width: 1280px; height: 100%;
+    margin: 0 auto;
+}
+
+/* main-text0 */
+
+.main_text0{
+    width: 100%; height: 600px;
+    background-image: url(../images/lotte_bg.jpeg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main_text1 */
+
+.main_text1{
+    width: 100%; height: 1300px;
+    margin-top: 130px;
+}
+
+.main_text1 > .inner_wrap{
+    width: 1400px; height: 100%;
+    margin: 0 auto;
+}
+
+.main_text1 h2{
+    font-size: 40px; font-weight: normal;
+    color: #AA8319;
+    margin-bottom: 45px;
+}
+
+.main_text1 ul{
+    float: left;
+    width: 100%; height: 1200px;
+}
+
+.main_text1 ul > li{
+    display: inline-block;
+    width: 448px; height: 600px;
+    margin-right: 22px;
+}
+
+.main_text1 ul li:nth-child(3n){
+    margin-right: 0;
+}
+
+.main_text1 ul li .main1_img{
+    margin-bottom: 20px;
+}
+
+.main_text1 ul li img{
+    width: 448px; height: 448px;
+}
+
+.main_text1 ul li p{
+    font-size: 16px; font-weight: normal;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.main_text1 ul li h4{
+    font-size: 22px; font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main_text1 ul li a{
+    color: #AA8319; font-weight: normal;
+}
+
+/* main_text2 */
+
+.main_text2{
+    width: 100%; height: 300px;
+    margin-top: 130px;
+}
+
+.main_text2 .main_text2_bg{
+    width: 100%; height: 100%;
+    padding-top: 100px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    background-image: url(../images/lotte_content.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main_text2_bg h2{
+    font-size: 40px; font-weight: bolder;
+    color: #fff;
+}
+
+.main_text2_bg p{
+    margin-top: 20px;
+    font-size: 16px; font-weight: normal;
+    color: #fff;
+}
