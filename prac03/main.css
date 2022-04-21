@@ -10,6 +10,7 @@
 /* header */
 
 header{
+    position: relative;
     width: 100%; height: 50px;
     border-bottom: 1px solid #ededed;
 }
@@ -50,8 +51,12 @@ header .inner_wrap{
 /* nav */
 
 nav{
+    position: sticky;
+    top: 0; left: 0;
     width: 100%; height: 80px;
     border-bottom: 1px solid #ededed;
+    background-color: #fff;
+    z-index: 1;
 }
 
 nav .logo_img2{
@@ -162,10 +167,16 @@ nav > .inner_wrap{
 
 .main_text1 ul li .main1_img{
     margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .main_text1 ul li img{
     width: 448px; height: 448px;
+    transition: 0.3s;
+}
+
+.main_text1 ul li img:hover{
+    transform: scale(1.2);
 }
 
 .main_text1 ul li p{
@@ -251,8 +262,29 @@ nav > .inner_wrap{
     margin-right: 26px;
 }
 
+.main_text3 ul li .main3_img{
+    position: relative;
+    overflow: hidden;
+}
+
 .main_text3 ul li img{
     width: 448px; height: 298px;
+}
+
+.main_text3 ul li figcaption{
+    position: absolute;
+    top: 0; left: 0;
+    width: 448px; height: 298px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    line-height: 298px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.main_text3 ul li a:hover figcaption{
+    opacity: 1;
 }
 
 .main_text3 ul li h4{
